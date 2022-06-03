@@ -8,7 +8,7 @@
 
 int main(void)
 {
-int x;
+var x;
 
 for (x = 0; x < 10; x++)
 {
