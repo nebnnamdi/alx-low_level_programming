@@ -10,7 +10,7 @@ int main(void)
 {
 char x = 'a';
 
-for (x = 'a'; x <= 'z'; a++)
+for (x = 'a'; x <= 'z'; x++)
 {
 if ((x != 'e') && (x != 'q'))
 }
