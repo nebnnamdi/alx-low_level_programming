@@ -13,7 +13,7 @@ char x = 'a';
 for (x = 'a'; x <= 'z'; x++)
 {
 if ((x != 'e') && (x != 'q'))
-}
+{
 putchar(x);
 }
 putchar('\n');
