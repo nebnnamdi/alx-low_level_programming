@@ -12,12 +12,12 @@ int main(void)
   /* your code goes there */
   if(n > 0)
     {
-      printf("%ld is positive \n", n)
+      printf("%ld is positive \n", n);
 	} else if (n == 0)
     {
-      printf("%ld is 0", n)
+      printf("%ld is 0", n);
 	} else {
-    printf("%ld is negative", n)
+    printf("%ld is negative", n);
       }
   return (0);
 }
