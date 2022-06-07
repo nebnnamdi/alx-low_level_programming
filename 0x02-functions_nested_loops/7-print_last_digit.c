@@ -2,7 +2,7 @@
 
 /**
  * print_last_digit - prints last digin
- * @x: The input to check
+ * @y: The input to check
  * Return: value
  */
 
