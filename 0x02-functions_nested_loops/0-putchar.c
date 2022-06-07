@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <main.h> 
 
 /**
  * main - Task
@@ -9,4 +10,5 @@
 
 int main(){
   printf('_putchar');
+  return(0);
 }
