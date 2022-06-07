@@ -14,6 +14,6 @@ void print_alphabet(void){
 char i = 'a';
 while(i <= 'z'){
 _putchar(i);
-return(0);
+return;
 }
 }
