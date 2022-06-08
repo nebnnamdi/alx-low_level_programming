@@ -2,8 +2,8 @@
 
 /**
  *add: adds two int
- *X: is first value
- *Y: is second value
+ *@x: is first value
+ *@y: is second value
  *Return: sum
  */
 
