@@ -1,4 +1,4 @@
-#include 'main.h'
+#include "main.h"
 
 /**
  * print_most_numbers - prints numbers 0 to 9 without 2,4
@@ -16,4 +16,5 @@ _putchar(x + '0');
 x++;
 }
 _putchar('\n');
+return;
 }
