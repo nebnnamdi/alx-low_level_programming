@@ -1,12 +1,14 @@
 #include "main.h"
 
 /**
- * _isdigit - checks for digit
+ * mul - multiplies 2 integers
  * @c: input integer
- * Return: 1 if c is a digit
+ * Return: product 
  */
 
 int mul(int a, int b)
 {
-return (a * b);
+int product;
+product = (a * b);
+return (product);
 }
