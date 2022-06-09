@@ -13,20 +13,19 @@ if (n <= 0)
 _putchar('\n');
 } else
 {
-int x, y;
+int i, j;
 
-for (x = 0; x < n; x++)
+for (i = 0; i < n; i++)
 {
-for (y = 0; y < n; j++)
+for (j = 0; j < n; j++)
 {
-if (y == x)
+if (j == i)
 {
 _putchar('\\');
 }
-else if (y < x)
-  {
+else if (j < i)
+{
 _putchar(' ');
-}
 }
 }
 _putchar('\n');
