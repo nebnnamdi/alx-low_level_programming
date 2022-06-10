@@ -2,7 +2,7 @@
 
 /**
  * main - causes an infinite loop
- * Return: 0
+ * Return: 0 and prints \\o/\n
  */
 
 int main(void)
