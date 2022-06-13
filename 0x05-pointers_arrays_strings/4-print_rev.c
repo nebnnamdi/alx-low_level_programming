@@ -6,22 +6,29 @@
  * Return:
  */
 
-void rev_string(char *s)
-{
-int i = 0;
-int j = 0;
-char k;
+#include "main.h"
 
-while (*(s + i) != '\0')
-i++;
-i--;
+/**
+ * rev_string - function that reverses a string
+ * @s: String to reverse
+ * Return:
+ */
 
-while (j < i)
+void print_rev(char *s)
 {
-k = s[i];
-s[i] = s[j];
-s[j] = k;
-j++;
-i--;
-}
+  int count = 0;
+
+  while (s[count])
+    {
+      count++;
+    }
+
+  count--;
+
+  for (; count >= 0; count--)
+    {
+      _putchar(s[count]);
+    }
+
+  _putchar('\n');
 }
