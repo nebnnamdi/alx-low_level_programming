@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * puts2 - function that prints every other 
- * @s: input
+ * puts2 - function that prints every other
+ * @str: input
  * Return:
  */
 
