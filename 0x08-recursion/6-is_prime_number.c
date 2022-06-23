@@ -2,7 +2,6 @@
 
 /**
  * is_prime_number - returns 1 if the input integer is a prime number
- *getNumPrim - function that gets if num is 0 or 1
  *@num: inout number
  *@i: counter variable
  * otherwise return 0
@@ -20,6 +19,10 @@ return (0);
 }
 return (getNumPrim(n, 2));
 }
+
+/**
+ *getNumPrim - checks input if 1 or 0
+ */
 
 int getNumPrim(int num, int i)
 {
