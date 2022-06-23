@@ -1,34 +1,39 @@
 #include "main.h"
 
 /**
- * wildcmp - Funtion
+ * is_prime_number - returns 1 if the input integer is a prime number
+ * otherwise return 0
+ * @n: input number
  *
- * @s1: Variable
- * @s2: Variable
- *
- * Return: Int
+ * Return: int
  */
-int wildcmp(char *s1, char *s2)
-{
 
-if (*s1 == *s2 && *s1 != '\0' && *s2 != '\0')
+int is_prime_number(int n)
 {
-return (wildcmp(s1 + 1, s2 + 1));
-}
-if (*s1 == '\0' && *s2 == '\0')
-{
-return (1);
-}
-if (*s2 == '*')
-{
-if (wildcmp(s1, s2 + 1) || wildcmp(s1 + 1, s2))
-{
-return (1);
-}
-if (*(s1 + 1) != '\0' && *s2 == '\0')
+if (n <= 1)
 {
 return (0);
 }
+return (getNumPrim(n, 2));
+}
+
+/**
+ * getNumPrim - function that gets if num is 0 or 1
+ *
+ * @num: input number
+ * @i: Counter variable
+ * Return: int
+ */
+
+int getNumPrim(int num, int i)
+{
+if (num == i)
+{
+return (1);
+}
+if (num % i == 0)
+{
 return (0);
 }
+return (getNumPrim(num, i + 1));
 }
