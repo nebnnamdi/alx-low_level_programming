@@ -7,6 +7,8 @@
  * Return: int
  */
 
+int getNumPrim(int num, int i);
+
 int is_prime_number(int n)
 {
 if (n <= 1)
