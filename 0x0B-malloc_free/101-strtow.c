@@ -9,15 +9,15 @@
  **/
 int wordCounterRec(char *str, int i)
 {
-  if (str[i] == '\0')
-    {
-      return (0);
-    }
-  if (str[i] == ' ' && str[i + 1] != ' ' && str[i + 1] != '\0')
-    {
-      return (1 + wordCounterRec(str, i + 1));
-    }
-  return (wordCounterRec(str, i + 1));
+if (str[i] == '\0')
+{
+return (0);
+}
+if (str[i] == ' ' && str[i + 1] != ' ' && str[i + 1] != '\0')
+{
+return (1 + wordCounterRec(str, i + 1));
+}
+return (wordCounterRec(str, i + 1));
 }
 
 /**
@@ -45,7 +45,6 @@ char **strtow(char *str)
 {
 char **strDup;
 int i, n, m, words;
-
 if (str == NULL || str[0] == 0)
 {
 return (NULL);
@@ -57,7 +56,6 @@ if (words < 1)
 return (NULL);
 }
 strDup = malloc(sizeof(char *) * (words + 1));
-
 if (strDup == NULL)
 {
 return (NULL);
