@@ -24,10 +24,10 @@ while (av[i][j] != '\0')
 j++;
 cont++;
 }
-	  cont++;
+cont++;
 }
 cont++;
-ar = malloc(cont * sizeof(char));
+ar = malloc(cont *sizeof(char));
 if (ar == NULL)
 return (NULL);
 str = ar;
