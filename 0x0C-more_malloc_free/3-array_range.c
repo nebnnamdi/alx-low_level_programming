@@ -10,9 +10,9 @@
 
 int *array_range(int min, int max)
 {
-  int *arr;
-  int size;
-  int i = 0;
+int *arr;
+int size;
+int i = 0;
 
 if (min > max)
 {
