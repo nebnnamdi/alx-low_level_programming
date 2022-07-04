@@ -28,7 +28,7 @@ while (owner[ownerLen++])
 {
 ;
 }
-d1->name = malloc(nameLen * sizeof(d1->name));
+d1->name = malloc(nameLen *sizeof(d1->name));
 if (d1->name == NULL)
 {
 free(d1);
