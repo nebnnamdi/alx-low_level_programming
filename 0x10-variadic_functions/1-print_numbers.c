@@ -1,8 +1,9 @@
 #include "variadic_functions.h"
 #include <stdio.h>
+#include <stdarg.h>
 
 /**
- *  print_numbers - prints out numbers given
+ * print_numbers - prints out numbers given
  * @separator: string to be seperated between numbers
  * @n: number of arguements
  * Return: nothing
