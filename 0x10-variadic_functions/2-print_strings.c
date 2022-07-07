@@ -8,22 +8,29 @@
  * Return: 0 if n is 0 or return sum
  */
 
-int sum_them_all(const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
-va_list numbers;
-int sum;
+va_list strings;
 unsigned int i;
+char *ptr;
 
-if (n == 0)
-{
-return (0);
-}
-sum = 0;
-va_start(numbers, n);
+va_start(strings, n);
 for (i = 0; i < n; i++)
 {
-sum += va_arg(numbers, int);
+ptr = va_arg(strings, char *);
+if (ptr == NULL)
+{
+printf("(nil)");
 }
-va_end(numbers);
-return (sum);
+else
+{
+printf("%s", ptr);
+if (i < n - 1 && separator != NULL)
+{
+printf("%s", separator);
+}
+}
+}
+va_end(strings);
+printf("\n");
 }
