@@ -12,8 +12,8 @@ listint_t *tmp;
 
 while (head != NULL)
 {
-tmp = head;
-head = head->next;
-free(tmp);
+free_list(head->next);
+free(head->str);
+free(head);
 }
 }
