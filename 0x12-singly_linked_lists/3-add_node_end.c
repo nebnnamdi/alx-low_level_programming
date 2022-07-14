@@ -11,13 +11,13 @@
 
 int _strlen(const char *s)
 {
-  int i;
+int i;
 
-  for (i = 0; s[i]; i++)
-    {
-      ;
-    }
-  return (i);
+for (i = 0; s[i]; i++)
+{
+;
+}
+return (i);
 }
 
 /**
@@ -28,21 +28,21 @@ int _strlen(const char *s)
 
 void *_strdup(const char *src)
 {
-  int len, i;
-  char *dest;
+int len, i;
+char *dest;
 
-  len = _strlen(src);
-  dest = malloc((len + 1) * sizeof(char));
-  if (dest == NULL)
-    {
-      return (NULL);
-    }
-  for (i = 0; src[i]; i++)
-    {
-      dest[i] = src[i];
-    }
-  dest[i] = '\0';
-  return (dest);
+len = _strlen(src);
+dest = malloc((len + 1) * sizeof(char));
+if (dest == NULL)
+{
+return (NULL);
+}
+for (i = 0; src[i]; i++)
+{
+dest[i] = src[i];
+}
+dest[i] = '\0';
+return (dest);
 }
 
 /**
