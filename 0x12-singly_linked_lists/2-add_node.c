@@ -15,7 +15,7 @@ for (i = 0; s[i]; i++)
 {
 ;
 }
-  return (i);
+return (i);
 }
 
 /**
