@@ -1,28 +1,24 @@
 #include "lists.h"
 
 /**
- * get_nodeint_at_index - Function return index of the list
- * @head: head nodes
- * @index: index of the node
- * Return: list
+ * sum_listint - Function that sum lists
+ * @head: head node
+ * Return: sum
  */
 
-listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
+int sum_listint(listint_t *head)
 {
-listint_t *new = head;
-unsigned int i;
+int sum = 0;
 
-if (!head)
+if (head != NULL)
 {
-return (0);
-}
-for (i = 0; new; i++)
+while (head->next != NULL)
 {
-if (i == index)
-{
-return (new);
+sum += head->n;
+head = head->next;
 }
-new = new->next;
+sum += head->n;
+return (sum);
 }
-return (NULL);
+return (sum);
 }
