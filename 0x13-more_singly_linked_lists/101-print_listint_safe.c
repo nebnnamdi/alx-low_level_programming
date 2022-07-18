@@ -14,7 +14,7 @@ const listint_t *temp, *node;
 node = head;
 while (node != NULL)
 {
-printf("[%p] %d\n", (void *)node, node->n);
+printf("[%p] %d\n", (void *) node, node->n);
 temp = node;
 node = node->next;
 i++;
