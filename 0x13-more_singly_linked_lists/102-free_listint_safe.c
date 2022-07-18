@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_listint_safe - prints in safe mode
+ * free_listint_safe - free list in safe
  * @h: input
  * Return: i
  */
