@@ -12,9 +12,7 @@ unsigned long index, size;
 hash_node_t *new_node;
 
 if (ht  == NULL || key == NULL || value == NULL)
-{
 return (0);
-}
 
 size = ht->size;
 index = key_index((const unsigned char *)key, size);
@@ -28,9 +26,7 @@ return (1);
 new_node = malloc(sizeof(hash_node_t));
 
 if (new_node == NULL)
-{
 return (0);
-}
 
 new_node->key = strdup(key);
 new_node->value = strdup(value);
